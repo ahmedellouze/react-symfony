@@ -28,6 +28,7 @@ const EDIT='EDIT_COMMENT';
         if(!$user instanceof User ||!$subject instanceof Comment){
             return false;
         }
-        return $subject->getAuthor()->getId()===$user->getId();
+        
+        return $subject->getAuthor()->getId() === $user->getId();
     }
 }
